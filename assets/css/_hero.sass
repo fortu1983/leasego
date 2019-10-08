@@ -1,0 +1,136 @@
+// $smartphone: 575.98px
+// $tablet: 767.98px
+// $tablet-pro: 992.98px
+// $desktop: 1199.98px
+// $wide-desktop: 1200px
+  
+#hero
+  position: relative
+  height: 500px
+  width: 100%
+  padding-top: 60px
+  background: $blue
+  @media (max-width: $smartphone)
+    height: 230px
+  @media (min-width: 575.99px) and (max-width: 767.97px)
+    height: 350px
+  .wrapper
+    .hero-tagline
+      height: 500px
+      width: 100%
+      position: relative
+      @media (max-width: $smartphone)
+        height: inherit
+      h2
+        font-family: Supreme-Alternative
+        font-size: 165px
+        position: absolute
+        @media (min-width: $tablet-pro) and (max-width: 1199.97px)
+          font-size: 140px
+        @media (min-width: $tablet) and (max-width: 992.97px)
+          font-size: 120px
+        @media (min-width: $smartphone) and (max-width: 767.97px)
+          font-size: 100px
+        @media (min-width: 321px) and (max-width: 575.97px)
+          font-size: 50px
+        @media (max-width: 320px)
+          font-size: 40px
+        &:nth-child(1)
+          color: white
+          margin-top: -10px
+          margin-left: 70px
+          @media (min-width: $tablet-pro) and (max-width: 1199.97px)
+            margin-top: 0px
+            margin-left: 140px
+          @media (min-width: $tablet) and (max-width: 992.97px)
+            margin-top: 0px
+            margin-left: 70px
+          @media (min-width: $smartphone) and (max-width: 767.97px)
+           margin-top: 0px
+            margin-left: 60px
+          @media (max-width: 575.97px)
+            margin-top: 10px
+        &:nth-child(2)
+          color: #919191
+          right: 100px
+          margin-top: 110px
+          @media (min-width: $tablet) and (max-width: 992.97px)
+            right: 60px
+            margin-top: 90px
+          @media (min-width: $smartphone) and (max-width: 767.97px)
+            right: 40px
+            margin-top: 70px
+          @media (max-width: 575.97px)
+            right: 60px
+            margin-top: 50px
+  .cars
+    position: absolute
+    bottom: -170px
+    left: 50%
+    margin-left: -706px
+    @media (min-width: $tablet-pro) and (max-width: 1199.97px)
+      bottom: -100px
+      margin-left: -526px
+    @media (min-width: $tablet) and (max-width: 992.97px)
+      bottom: 30px
+      margin-left: -426px
+    @media (min-width: $smartphone) and (max-width: 767.97px)
+      bottom: -30px
+      margin-left: -346px
+    @media (max-width: 575.97px)
+      display: flex
+      flex-direction: row
+      justify-content: center
+      position: relative
+      bottom: 0
+      top: 140px
+      left: inherit
+      margin-left: inherit
+    img
+      height: auto
+      &:nth-child(1)
+        width: 640px
+        position: relative
+        left: 130px
+        @media (min-width: $tablet-pro) and (max-width: 1199.97px)
+          width: 500px
+        @media (min-width: $tablet) and (max-width: 992.97px)
+          width: 350px
+          left: 130px
+        @media (min-width: $smartphone) and (max-width: 767.97px)
+          width: 280px
+        @media (max-width: $smartphone)
+          width: 155px
+          height: 91px
+          left: 0px
+        // @media (min-width: 321px) and (max-width: $smartphone)
+        //   width: 190px
+        //   height: 111px
+        //   left: 0px
+        // @media (max-width: 320px)
+        //   width: 155px
+        //   height: 91px
+        //   left: 0px
+      &:nth-child(2)
+        width: 600px
+        position: relative
+        left: 0px
+        @media (min-width: $tablet-pro) and (max-width: 1199.97px)
+          width: 430px
+        @media (min-width: $tablet) and (max-width: 992.97px)
+          width: 340px
+        @media (min-width: $smartphone) and (max-width: 767.97px)
+          width: 270px
+          left: 30px
+        @media (max-width: $smartphone)
+          width: 155px
+          height: 91px
+          left: 0px
+        // @media (min-width: 321px) and (max-width: $smartphone)
+        //   width: 190px
+        //   height: 111px
+        //   left: 0px
+        // @media (max-width: 320px)
+        //   width: 155px
+        //   height: 91px
+        //   left: 0px

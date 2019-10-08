@@ -1,0 +1,77 @@
+@import '_variables'
+@import '_header'
+@import '_main'
+@import '_footer'
+@import '_hero'
+@import '_keyframes'
+@import '_form'
+
+// $smartphone: 575.98px
+// $tablet: 767.98px
+// $tablet-pro: 992.98px
+// $desktop: 1199.98px
+// $wide-desktop: 1200px
+
+html
+  scroll-behavior: smooth
+
+body
+  margin: 0px
+  font-family: 'Poppins', sans-serif
+  animation: fadein 2s
+
+@keyframes fadein
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+ol, ul
+  list-style: none
+  padding: 0
+
+a
+  text-decoration: none
+
+::placeholder
+  color: rgba(0, 0, 0, 0.4)
+  font-size: 12px
+  font-weight: 400
+
+*:focus
+  outline: none
+
+img
+  width: 100%
+
+@font-face 
+  font-family: Supreme-Alternative
+  src: url("../fonts/Supreme-Alternative.ttf")
+  src: url("../fonts/Supreme-Regular.otf")
+  // src: url("../fonts/Supreme-Splashes.otf")
+
+
+.wrapper
+  width: 100%
+  margin-right: auto
+  margin-left: auto
+  position: relative
+  @media (min-width: $desktop) 
+    max-width: 1140px
+  @media (min-width: $tablet-pro) and (max-width: 1199.97px)
+    max-width: 960px
+  @media (min-width: $tablet) and (max-width: 992.97px)
+    max-width: 720px
+  @media (min-width: $smartphone) and (max-width: 767.97px)
+    max-width: 540px
+
+.row-main
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  position: relative
+
+.column
+  display: flex
+  flex-direction: column

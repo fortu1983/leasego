@@ -1,0 +1,214 @@
+#red-rectangles
+  background: white
+  height: 200px
+  @media (max-width: $smartphone)
+    height: inherit
+  .wrapper
+    .row-main
+      margin-top: 200px
+      @media (min-width: $tablet-pro) and (max-width: 1199.97px)
+        margin-top: 130px
+      @media (max-width: 992.97px)
+        margin-top: 60px
+      @media (max-width: $smartphone)
+        flex-direction: column
+      .rectangle
+        background-color: $red
+        position: relative
+        width: 300px
+        height: 150px
+        @media (min-width: $tablet) and (max-width: 992.97px)
+          width: 220px
+        @media (min-width: $smartphone) and (max-width: 767.97px)
+          width: 170px
+        @media (max-width: $smartphone)
+          margin: 0 0 50px 0
+        .triangle
+          width: 0
+          height: 0
+          border-left: 50px solid transparent
+          border-right: 50px solid transparent
+          border-bottom: 40px solid #df0030
+          position: absolute
+          top: -30px
+          left: 50%
+          margin-left: -55px
+        h2
+          font-weight: 200
+          text-transform: uppercase
+          text-align: center
+          color: white
+          line-height: 30px
+          margin-top: 30px
+          @media (min-width: $tablet) and (max-width: 992.97px)
+            font-size: 20px
+          @media (min-width: $smartphone) and (max-width: 767.97px)
+            font-size: 16px
+
+#cards
+  .wrapper
+    .row-main
+      display: flex
+      flex-direction: column
+      .cards-wrapper
+        width: 100%
+        flex-direction: row
+        display: flex
+        justify-content: space-between
+        @media (max-width: $tablet)
+          flex-direction: column
+        .card-single
+          background: $gray
+          width: 45%
+          position: relative
+          height: 500px
+          @media (max-width: $tablet)
+            width: 90%
+            margin: 0 5% 40px 5%
+          .car-back
+            h2
+              font-family: Supreme-Alternative
+              color: $gray-teal
+              font-size: 92px
+              line-height: 82px
+              margin: 0
+              padding: 20px 0 0 20px
+            img
+              width: 80%
+              margin-left: 10%
+              position: relative
+            #mini
+              bottom: 30px
+            #toyota
+              bottom: 30px
+          .car-description
+            padding: 0 0 0px 20px
+            line-height: 25px
+            span
+              &:nth-child(1)
+                font-size: 24px
+              &:nth-child(2)
+                font-size: 4px
+                color: $gray
+          .price-red
+            position: absolute
+            width: 220px
+            height: 100px
+            background: #df0030
+            bottom: -10px
+            right: -10px
+            color: white
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            line-height: 40px
+            padding: 10px 0 0 0
+            span
+              &:nth-child(1)
+                font-size: 55px
+              &:nth-child(2)
+                font-size: 25px
+      .cards-footer
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        width: 100%
+        margin: 20px 0
+        @media (max-width: $tablet)
+          flex-direction: column
+          align-items: center
+        h2
+          span
+            font-weight: 400
+            position: relative
+            &:nth-child(1) 
+              color: $gray-dark
+            &:nth-child(2) 
+              color: $text
+          .price-x
+            position: relative
+            img
+              position: absolute
+              height: 30px
+              width: auto
+              left: 20px
+              top: 5px
+
+#gray-footer
+  background: $gray
+  width: 100%
+  height: 400px
+  display: flex
+  align-items: center
+  padding: 40px 0
+  @media (max-width: $tablet)
+    height: inherit
+    padding: inherit
+  .wrapper
+    .row-main
+      @media (max-width: $tablet)
+        flex-direction: column
+      .column
+        display: flex
+        flex-direction: column
+        width: 45%
+        color: $text
+        @media (max-width: $tablet)
+          width: 90%
+          margin: 0 5% 40px 5%
+        .row
+          display: flex
+          flex-direction: row
+          h2
+            font-weight: 500
+        img
+          width: 40px
+          height: auto
+          margin-right: 20px
+        
+  
+
+#blue-contact-footer
+  background: $blue
+  width: 100%
+  height: 500px
+  @media (max-width: $tablet)
+    height: inherit
+  .wrapper
+    .row-main
+      @media (max-width: $tablet)
+        flex-direction: column
+      .column
+        width: 45%
+        height: 500px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        @media (max-width: $tablet)
+          width: 100%
+          height: inherit
+          margin: 10px 0
+        h2 
+          color: white
+
+#sub-footer
+  background: $gray
+  width: 100%
+  height: 50px
+  @media (max-width: $tablet)
+    height: 70px
+  .wrapper
+    .row-main
+      width: 100%
+      .column
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        p
+          @media (max-width: $smartphone)
+            font-size: 14px
+            text-align: center

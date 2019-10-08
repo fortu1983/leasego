@@ -1,0 +1,130 @@
+.navbar
+  font-size: 14px
+  background: $blue
+  display: flex
+  justify-content: space-between
+  padding-bottom: 0
+  height: 70px
+  align-items: center
+  position: fixed
+  width: 100%
+  z-index: 2000
+  @media (max-width: $tablet-pro)
+    height: inherit
+  .wrapper
+    .row-main
+      @media (max-width: $tablet-pro)
+        flex-direction: column
+        align-items: self-start
+        margin-left: 20px
+        padding: 10px 0
+      .navbar-toggle
+        display: none
+        @media (max-width: $tablet-pro)
+          display: block
+          position: absolute
+          top: 25px
+          right: 20px
+          cursor: pointer
+          color: white
+          font-size: 24px
+      .nav-links, .logo
+        text-decoration: none
+        color: white
+      .logo
+        display: flex
+        flex-direction: row
+        align-items: center
+        img
+          height: 35px
+          width: auto
+          margin: 0 10px 0 0
+          @media (max-width: $smartphone)
+            height: 25px
+        h1
+          font-size: 12px
+          color: white
+          font-weight: 400
+        .desktop-tagline
+          display: block
+          @media (max-width: $tablet-pro)
+            display: none
+        .mobile-tagline
+          display: none
+          @media (max-width: $tablet-pro)
+            display: block
+      .main-nav
+        @media (min-width: $tablet-pro)
+          display: flex
+          flex-direction: row
+          justify-content: flex-end
+          align-items: center
+          li
+            margin-left: 20px
+          .infoline
+            a
+              display: flex
+              flex-direction: column
+              line-height: 16px
+              span
+                &:nth-child(1)
+                  color: $light-gray
+          .quote
+            border-right: 2px solid $light-gray
+            padding-right: 20px
+            perspective: 800px
+            display: inline-block
+            a
+              border: 2px solid $red
+              padding: 10px 35px
+              border-radius: 5px
+              outline: 2px solid transparent
+              transform-style: preserve-3d
+              &:hover
+                transform: rotateX(15deg)
+          .login
+            a
+              display: flex
+              img
+                width: 18px
+                vertical-align: middle
+                border-style: none
+                @media (max-width: $tablet-pro)
+                  width: 20px!important
+              span
+                &:nth-child(2)
+                  line-height: 1
+                  font-size: 12px
+                  text-transform: uppercase
+                  margin-left: 8px
+                  width: 66px
+
+.main-nav
+  list-style-type: none
+  display: none
+.active
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+  position: fixed
+  background: #1a44b7
+  left: 0
+  top: 40px
+  left: 0
+  padding: 50px 0
+  top: 62px
+  .infoline
+    margin: 0 0 30px 0
+  .quote
+    margin: 0 0 30px 0
+    a
+      border: 2px solid $red
+      padding: 10px 35px
+      border-radius: 5px
+  .login
+    a
+      display: flex
+      img
+        width: 20px
+        margin-right: 10px
